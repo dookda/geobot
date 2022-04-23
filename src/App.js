@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { useEffect, useState } from 'react';
 import './App.css';
 import Nav from './component/Nav';
+import Profile from './component/Profile';
 
 const liff = window.liff;
 
@@ -30,9 +31,7 @@ function App() {
   return (
     <div >
       <Nav />
-      {displayName}
-      {userId}
-      {pictureUrl}
+      <Profile displayName={displayName} userId={userId} pictureUrl={pictureUrl} />
     </div>
   );
 }
