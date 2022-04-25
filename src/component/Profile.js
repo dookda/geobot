@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 const Profile = ({ displayName, userId, pictureUrl }) => {
     return (
-        <div className='card-deck'>
+        <div className='d-flex justify-content-center'>
             <div className='card card-width'>
                 <img className="card-img-top" src={pictureUrl} alt="Logo" />
                 <div className='card-body'>
